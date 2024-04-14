@@ -12,11 +12,7 @@ class Mywindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.configure()
 
     def configure(self):
-        self.ok_button.clicked.connect(self.change_label_after_click)
-
-    def change_label_after_click(self):
-        self.label_1.setText('1')
-        self.label_2.setText('2')
+       pass
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
