@@ -61,15 +61,39 @@
      </spacer>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="line_result">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
         <height>65</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
       <property name="styleSheet">
        <string notr="true">color: black; background-color: white;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -85,6 +109,7 @@
         </property>
         <property name="font">
          <font>
+          <family>MS Shell Dlg 2</family>
           <pointsize>15</pointsize>
          </font>
         </property>
@@ -106,6 +131,7 @@
         </property>
         <property name="font">
          <font>
+          <family>MS Shell Dlg 2</family>
           <pointsize>15</pointsize>
          </font>
         </property>
@@ -127,6 +153,7 @@
         </property>
         <property name="font">
          <font>
+          <family>MS Shell Dlg 2</family>
           <pointsize>15</pointsize>
          </font>
         </property>
@@ -148,6 +175,7 @@
         </property>
         <property name="font">
          <font>
+          <family>MS Shell Dlg 2</family>
           <pointsize>15</pointsize>
          </font>
         </property>
@@ -173,6 +201,7 @@
         </property>
         <property name="font">
          <font>
+          <family>MS Shell Dlg 2</family>
           <pointsize>15</pointsize>
          </font>
         </property>
@@ -340,7 +369,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QPushButton" name="btn_Del">
+       <widget class="QPushButton" name="btn_clear">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -403,7 +432,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_sum">
+       <widget class="QPushButton" name="btn_plus">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -427,43 +456,6 @@
     </item>
     <item>
      <spacer name="verticalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QLabel" name="text1">
-      <property name="minimumSize">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: white;</string>
-      </property>
-      <property name="text">
-       <string>Этот калькултяор не для слабонервных</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="verticalSpacer_3">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
